@@ -25,7 +25,7 @@ Get started quickly by following these steps, or scroll down to the remaining se
 * Before users can create a volume for a Cloud Volumes ONTAP, on-premises ONTAP, or Azure NetApp Files system using a template, make sure they have access to an appropriate working environment where the volume will be deployed.
 
 [role="quick-margin-list"]
-* If you plan to add a Cloud service "action" to your template, such as link:concept-backup-to-cloud.html[Cloud Backup^] or link:concept-cloud-compliance.html[Cloud Data Sense^], ensure that the service is active and licensed in your environment.
+* If you plan to add a Cloud service "action" to your template, such as https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^] or https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^], ensure that the service is active and licensed in your environment.
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Launch the Application Templates service
 
@@ -41,13 +41,13 @@ Follow the creation steps and define the actions that will be performed by the t
 
 Read the following requirements to make sure that you have a supported configuration.
 
-* If you don't already have a Connector, link:concept-connectors.html[see how to create Connectors^] for AWS, Azure, and GCP.
+* If you don't already have a Connector, https://docs.netapp.com/us-en/cloud-manager-get-started/concept-connectors.html[see how to create Connectors^] for AWS, Azure, and GCP.
 
-* When creating a Cloud Volumes ONTAP volume template, make sure you have a Cloud Volumes ONTAP working environment available for your users. See how to launch a Cloud Volumes ONTAP system in link:task-deploying-otc-aws.html[AWS^], link:task-deploying-otc-azure.html[Azure^], or in link:task-deploying-gcp.html[GCP^].
+* When creating a Cloud Volumes ONTAP volume template, make sure you have a Cloud Volumes ONTAP working environment available for your users. See how to launch a Cloud Volumes ONTAP system in https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html[AWS^], https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html[Azure^], or in https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html[GCP^].
 
-* When creating an on-premises ONTAP volume template, make sure you have an on-premises ONTAP working environment available for your users. See how to link:task-discovering-ontap.html[discover an on-premises ONTAP system^] in Cloud Manager.
+* When creating an on-premises ONTAP volume template, make sure you have an on-premises ONTAP working environment available for your users. See how to https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[discover an on-premises ONTAP system^] in Cloud Manager.
 
-* When creating an Azure NetApp Files volume template, make sure you have an Azure NetApp Files working environment available for your users. See how to link:task-manage-anf.html[create an Azure NetApp Files working environment^] in Cloud Manager.
+* When creating an Azure NetApp Files volume template, make sure you have an Azure NetApp Files working environment available for your users. See how to https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html[create an Azure NetApp Files working environment^] in Cloud Manager.
 
 * If you plan to use Cloud Backup to backup up a volume in the template, ensure that your environment has activated Cloud Backup.
 
@@ -61,7 +61,7 @@ Resource templates enable you to create new volumes or a new Cloud Volumes ONTAP
 
 === Create a template for a Cloud Volumes ONTAP volume
 
-See link:task-provisioning-storage.html#creating-flexvol-volumes[how to provision Cloud Volumes ONTAP volumes^] for details about all the parameters you need to complete in the Cloud Volumes ONTAP volume template.
+See https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-provisioning-storage.html#creating-flexvol-volumes[how to provision Cloud Volumes ONTAP volumes^] for details about all the parameters you need to complete in the Cloud Volumes ONTAP volume template.
 
 For this example we'll create a template named "CVO volume for databases" and include the following 2 actions:
 
@@ -151,7 +151,7 @@ For example, you could specify that "db" be a required prefix, suffix, or contai
 
 . *Tiering:* Choose the tiering policy that you would like applied to the volume, or set this to "None" if you do not want to tier cold data from this volume to object storage.
 +
-See link:concept-data-tiering.html#volume-tiering-policies[volume tiering policies^] for an overview, and see link:task-tiering.html[Tiering inactive data to object storage^] to make sure your environment is set up for tiering.
+See https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html#volume-tiering-policies[volume tiering policies^] for an overview, and see https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-tiering.html[Tiering inactive data to object storage^] to make sure your environment is set up for tiering.
 
 . Click *Apply* after you have defined the parameters needed for this action.
 +
@@ -185,7 +185,7 @@ See <<What to do after you have created the template,what you should tell your u
 
 Creating a template for an Azure NetApp Files volume is done in the same manner as creating a template for a Cloud Volumes ONTAP volume.
 
-See link:task-manage-anf-volumes.html#creating-volumes[how to provision Azure NetApp Files volumes^] for details about all the parameters you need to complete in the ANF volume template.
+See https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes[how to provision Azure NetApp Files volumes^] for details about all the parameters you need to complete in the ANF volume template.
 
 .Steps
 
@@ -293,7 +293,7 @@ See <<What to do after you have created the template,what you should tell your u
 
 === Create a template for an on-premises ONTAP volume
 
-See link:task-provisioning-ontap.html#creating-volumes-for-ontap-clusters[how to provision on-premises ONTAP volumes^] for details about all the parameters you need to complete in the on-premises ONTAP volume template.
+See https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-provisioning-ontap.html#creating-volumes-for-ontap-clusters[how to provision on-premises ONTAP volumes^] for details about all the parameters you need to complete in the on-premises ONTAP volume template.
 
 .Steps
 
@@ -403,7 +403,7 @@ You can create a single-node or high-availability Cloud Volumes ONTAP working en
 * This template doesn't create the first volume in the working environment. You must add a "Create Volume in Cloud Volumes ONTAP" action in the template to create the volume.
 ====
 
-See link:task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws[how to launch a single-node Cloud Volumes ONTAP system in AWS^] or a link:task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws[Cloud Volumes ONTAP HA pair in AWS] for the prerequisites that must be in place, and for details about all the parameters you'll need to define in this template.
+See https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws[how to launch a single-node Cloud Volumes ONTAP system in AWS^] or a https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws[Cloud Volumes ONTAP HA pair in AWS] for the prerequisites that must be in place, and for details about all the parameters you'll need to define in this template.
 
 .Steps
 
@@ -448,7 +448,7 @@ For information about tags, refer to https://docs.aws.amazon.com/AWSEC2/latest/U
 
 |===
 
-. *Location & Connectivity*: Enter the network information that you recorded in the link:task-planning-your-config.html#aws-network-information-worksheet[AWS worksheet]. This includes the AWS Region, VPC, Subnet, and Security Group.
+. *Location & Connectivity*: Enter the network information that you recorded in the https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-planning-your-config.html#aws-network-information-worksheet[AWS worksheet^]. This includes the AWS Region, VPC, Subnet, and Security Group.
 +
 If you have an AWS Outpost, you can deploy a single node Cloud Volumes ONTAP system in that Outpost by selecting the Outpost VPC. The experience is the same as any other VPC that resides in AWS.
 
@@ -458,11 +458,11 @@ If you have an AWS Outpost, you can deploy a single node Cloud Volumes ONTAP sys
 +
 For AWS-managed encryption, you can choose a different Customer Master Key (CMK) from your account or another AWS account.
 +
-link:task-setting-up-kms.html[Learn how to set up the AWS KMS for Cloud Volumes ONTAP].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-setting-up-kms.html[Learn how to set up the AWS KMS for Cloud Volumes ONTAP^].
 
 . *Charging Method*: Specify which charging option would you like to use with this system.
 +
-link:concept-licensing.html[Learn about these charging methods].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html[Learn about these charging methods^].
 
 . *NetApp Support Site Account*: Select a NetApp Support Site account.
 
@@ -617,7 +617,7 @@ Service templates enable you to activate Cloud Backup, Cloud Data Sense, or Repl
 
 === Add Backup functionality to a volume
 
-When creating a volume template, you can add in the template that you want to create backups of the volume periodically using the link:concept-backup-to-cloud.html[Cloud Backup^] service.
+When creating a volume template, you can add in the template that you want to create backups of the volume periodically using the https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^] service.
 
 TIP: This action is not applicable for Azure NetApp Files volumes.
 
@@ -633,7 +633,7 @@ If you want to create backups for a different volume, you can enter those detail
 
 === Add Data Sense functionality to a volume
 
-When creating a volume template, you can add in the template that you want to scan the volume for compliance and classification using the link:concept-cloud-compliance.html[Cloud Data Sense] service.
+When creating a volume template, you can add in the template that you want to scan the volume for compliance and classification using the https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^] service.
 
 image:screenshot_template_data_sense.png[A screenshot of the page to enable scanning functionality for your volumes.]
 
@@ -645,7 +645,7 @@ If you want to scan data for a different volume, you can enter those details man
 
 === Add Replication functionality to a volume
 
-When creating a volume template, you can add in the template that you want to replicate the data in the volume to another volume using the link:concept-replication.html[Replication] service. You can replicate data to a Cloud Volumes ONTAP cluster or to an on-prem ONTAP cluster.
+When creating a volume template, you can add in the template that you want to replicate the data in the volume to another volume using the https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html[Replication] service. You can replicate data to a Cloud Volumes ONTAP cluster or to an on-prem ONTAP cluster.
 
 TIP: This action is not applicable for Azure NetApp Files volumes.
 
@@ -680,7 +680,7 @@ image:screenshot_template_replication_dest.png[A screenshot of the page to defin
 +
 image:screenshot_template_replication_policy.png[A screenshot of the page to define the replication settings for the relationship.]
 +
-.. Select the link:concept-replication-policies.html#types-of-replication-policies[replication policy] that you want to use.
+.. Select the https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication-policies.html#types-of-replication-policies[replication policy^] that you want to use.
 .. Choose a one-time copy or a recurring replication schedule.
 .. Enable replication health status monitoring if you want the drift report to include the replication health of the SnapMirror relationship along with the lag time, status, and last transfer time. link:task-check-template-compliance.html#replication-health-details-in-the-drift-report[See what this looks like in the drift report].
 .. Select whether you want to set a transfer rate limit, and then enter the maximum rate (in kilobytes per second) at which data can be transferred. You can enter a fixed value, or you can provide a minimum and maximum and let the storage admin select a value in that range.
