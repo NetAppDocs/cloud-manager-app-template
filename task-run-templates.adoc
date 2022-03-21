@@ -43,7 +43,7 @@ Select the template, click *Run Template*, and enter values in the editable fiel
 
 Read the following requirements to make sure that you have a supported configuration.
 
-* If you don't already have a Connector, https://docs.netapp.com/us-en/cloud-manager-get-started/concept-connectors.html[see how to create Connectors^] for AWS, Azure, and GCP.
+* If you don't already have a Connector, https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[see how to create Connectors^] for AWS, Azure, and GCP.
 
 * When creating a Cloud Volumes ONTAP volume, make sure you have a Cloud Volumes ONTAP working environment available.
 

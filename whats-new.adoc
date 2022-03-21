@@ -28,7 +28,9 @@ Yeah
 
 Using the "Find Existing Resources" action you can identify the working environment, and then use other template actions, such as creating a volume, to easily perform actions on existing working environments. link:task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates[Go here for details].
 
-=== The existing support for creating a Cloud Volumes ONTAP working environment in AWS has been expanded to include creating a high-availability system in addition to a single-node system. link:task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment[See how to create a template for a Cloud Volumes ONTAP working environment].
+=== Ability to create a Cloud Volumes ONTAP HA working environment in AWS.
+
+The existing support for creating a Cloud Volumes ONTAP working environment in AWS has been expanded to include creating a high-availability system in addition to a single-node system. link:task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment[See how to create a template for a Cloud Volumes ONTAP working environment].
 
 == 9 Feb 2022
 
