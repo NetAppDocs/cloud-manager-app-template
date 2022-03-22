@@ -78,7 +78,7 @@ homepage:
       links:
         - title: Cloud Volumes ONTAP working environment
           url: task-run-templates.html#select-and-run-a-working-environment-template
-        - title: Volume
+        - title: Volume for CVO, on-prem, and ANF
           url: task-run-templates.html#select-and-run-a-volume-template
     - title: Manage resources using templates and tags
       links:
