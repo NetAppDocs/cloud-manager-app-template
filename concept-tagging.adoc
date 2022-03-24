@@ -38,7 +38,7 @@ The ability to tag your resources requires no licensing and is free to use by al
 
 You can apply tags to the following resources.
 
-[cols=3*,options="header",cols="25,30,30",width="85%"]
+[cols=3*,options="header",cols="30,35,35",width="85%"]
 
 |===
 | Provider

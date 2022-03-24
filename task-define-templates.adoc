@@ -41,7 +41,7 @@ Follow the creation steps and define the actions that will be performed by the t
 
 Read the following requirements to make sure that you have a supported configuration.
 
-* If you don't already have a Connector, https://docs.netapp.com/us-en/cloud-manager-get-started/concept-connectors.html[see how to create Connectors^] for AWS, Azure, and GCP.
+* If you don't already have a Connector, https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[see how to create Connectors^] for AWS, Azure, and GCP.
 
 * When creating a Cloud Volumes ONTAP volume template, make sure you have a Cloud Volumes ONTAP working environment available for your users. See how to launch a Cloud Volumes ONTAP system in https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html[AWS^], https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html[Azure^], or in https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-gcp.html[GCP^].
 
