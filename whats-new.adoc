@@ -16,12 +16,6 @@ summary: Learn what's new in Application Templates and Tagging.
 Learn what's new in Application Templates and Tagging.
 
 // tag::whats-new[]
-== 03 Apr 2022
-
-=== Ability to do stuff
-
-Yeah
-
 == 03 Mar 2022
 
 === Now you can build a Template to find specific working environments.
@@ -39,13 +33,13 @@ The existing support for creating a Cloud Volumes ONTAP working environment in A
 Using the new "Find Resource" action you can identify all the volumes on which you want to enable Cloud Backup, and then use the Cloud Backup action to enable backup on those volumes.
 
 Current support is for volumes on Cloud Volumes ONTAP and on-premises ONTAP systems. link:task-define-templates.html#find-existing-volumes-and-activate-cloud-backup[Go here for details].
-// end::whats-new[]
 
 == 31 Oct 2021
 
 === Now you can tag your Sync relationships so you can group or categorize them for easy access.
 
 link:concept-tagging.html[Learn more about resource tagging].
+// end::whats-new[]
 
 == 11 Oct 2021
 
