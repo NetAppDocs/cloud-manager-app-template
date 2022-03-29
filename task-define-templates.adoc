@@ -474,7 +474,7 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensin
 +
 If the template values are correctly completed, a green checkmark is added to the "Create Working Environment in AWS (single node)" box.
 
-. You may want to add another action in this template to create a volume for this working environment. If so, click image:button_plus_sign_round.png[] and add that action. See how to <<Create a template for a Cloud Volumes ONTAP volume,Create a template for a Cloud Volumes ONTAP volume>> for details.
+. You may want to add another action in this template to create a volume for this working environment. If so, click image:button_plus_sign_round.png[plus button] and add that action. See how to <<Create a template for a Cloud Volumes ONTAP volume,create a template for a Cloud Volumes ONTAP volume>> for details.
 
 . Enter the template name in the top left.
 
