@@ -1,0 +1,163 @@
+---
+sidebar: sidebar
+permalink: task-run-templates.html
+keywords: templates, resource templates, services templates, volume templates, working environment templates
+summary: Select one of the application templates that your organization has built to create working environments or volumes that are optimized for specific workloads and applications. Templates also enable you to activate Cloud Backup, Cloud Data Sense, and Replication (SnapMirror) on the volumes, or on existing volumes.
+---
+
+= Create or modify resources using templates
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Select one of the application templates that your organization has built to create working environments or volumes that are optimized for specific workloads and applications. Templates also enable you to activate https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^], https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^], and https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html[Replication (SnapMirror)^] on the created volumes, or on existing volumes.
+
+Templates enable you to create volumes for Cloud Volumes ONTAP, Azure NetApp Files, and on-premises ONTAP systems.
+
+== Quick start
+
+Get started quickly by following these steps, or scroll down to the remaining sections for full details.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png[One] Verify required prerequisites
+
+[role="quick-margin-list"]
+* Before you can create a volume for a Cloud Volumes ONTAP, on-premises ONTAP, or Azure NetApp Files system using a template, make sure you have access to an appropriate working environment where the volume will be deployed.
+
+[role="quick-margin-list"]
+* If the template activates a cloud service on the volume, such as https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^] or https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^], ensure that the service is active and licensed in your environment.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png[Two] Launch the Application Templates service
+
+[role="quick-margin-para"]
+Select the *AppTemplate* service and click the *Templates* tab.
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png[Three] Build the resource by running the template and defining parameters
+
+[role="quick-margin-para"]
+Select the template, click *Run Template*, and enter values in the editable fields to create the resource.
+
+== Requirements
+
+Read the following requirements to make sure that you have a supported configuration.
+
+* If you don't already have a Connector, https://docs.netapp.com/us-en/cloud-manager-setup-admin/concept-connectors.html[see how to create Connectors^] for AWS, Azure, and GCP.
+
+* When creating a Cloud Volumes ONTAP volume, make sure you have a Cloud Volumes ONTAP working environment available.
+
+* When creating an on-premises ONTAP volume, make sure you have an on-premises ONTAP working environment available.
+
+* When creating an Azure NetApp Files volume, make sure you have an Azure NetApp Files working environment available.
+
+* If the template activates a cloud service on the volume, such as  https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-cloud.html[Cloud Backup^], https://docs.netapp.com/us-en/cloud-manager-data-sense/concept-cloud-compliance.html[Cloud Data Sense^], or https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html[Replication (SnapMirror)^], ensure that the service is active and licensed in your environment.
+
+== Select and run a volume template
+
+There are multiple ways to select and run a template to create new volumes:
+
+* Run the volume template from the working environment
+* Run the volume template from the Templates dashboard
+
+Regardless of the method you choose, the details about the required volume parameters that you must define are available in these sections:
+
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-provisioning-storage.html#creating-volumes-from-templates[How to provision Cloud Volumes ONTAP volumes^]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes-from-templates[How to provision Azure NetApp Files volumes^]
+* https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-provisioning-ontap.html#creating-volumes-from-templates[How to provision on-premises ONTAP volumes^]
+
+=== Run a volume template from the working environment
+
+You can add a volume to an existing working environment from the _Working Environment_ page and from the _Volume Details_ page.
+
+.Steps
+
+. From the _Working Environment_ page or from the _Volume Details_ page, click *Add Volume From Template*.
++
+image:screenshot_template_add_vol_from.png[Two screenshots showing how users can create new volumes from a template.]
++
+The _Templates Dashboard_ is displayed and it lists only those templates that are applicable to the selected working environment -- for example, it only shows Cloud Volumes ONTAP templates.
+
+. Click image:screenshot_horizontal_more_button.gif[More icon] and *Run Template*.
++
+image:screenshot_template_run_from_dashboard.png[A screenshot showing how to run a template from the Templates Dashboard.]
++
+The _Add Volume from Template_ page appears.
+
+. Enter values in the editable fields to create the volume and click *Run Template*.
++
+image:screenshot_run_template_from_canvas.png[A screenshot showing the parameters you need to define to create the volume from a template.]
+
+=== Run a volume template from the Templates Dashboard
+
+You can add a volume to an existing working environment from the _Templates Dashboard_.
+
+.Steps
+
+. Select the *AppTemplate* service and click the *Templates* tab.
++
+The _Templates Dashboard_ is displayed.
+
+. For the template that you want to use, click image:screenshot_horizontal_more_button.gif[More icon] and *Run Template*.
++
+image:screenshot_template_run_from_dashboard2.png[A screenshot showing how to run a template from the Templates Dashboard.]
++
+The _Run Template_ page appears.
+
+. Enter values in editable fields to create the volume and click *Run Template*.
++
+image:screenshot_run_template_from_dashboard.png[A screenshot showing the parameters you need to define to create the volume from a template.]
++
+Note that when you run the template from the dashboard that you need to select the working environment and other variables (for example, the storage VM and/or aggregate). When you run the template from the working environment, the working environment gets filled in automatically.
+
+== Select and run a working environment template
+
+You can create a new working environment from the _Templates Dashboard_ if your company has created a template for this functionality.
+
+If you have any questions about the details required to create the working environment, see https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html[Launching Cloud Volumes ONTAP in AWS^].
+
+.Steps
+
+. Select the *AppTemplate* service and click the *Templates* tab.
++
+The _Templates Dashboard_ is displayed.
+
+. For the template that you want to use, click image:screenshot_horizontal_more_button.gif[More icon] and *Run Template*.
++
+image:screenshot_template_run_from_dashboard3.png[A screenshot showing how to run a template from the Templates Dashboard.]
++
+The _Run Template_ page appears.
+
+. Enter values in editable fields to create the working environment and the first volume and click *Run Template*.
++
+image:screenshot_template_run_from_dashboard_we.png[A screenshot showing the parameters you need to define to create the working environment from a template.]
+
+== Select and run a template that finds existing resources
+
+You can run a template that finds certain resources (for example, volumes), and then enables a cloud service on those resources (for example, Cloud Backup), if your company has created a template using this functionality. When running the template, you can make some minor adjustments so that you apply the cloud service only to the appropriate resources.
+
+.Steps
+
+. Select the *AppTemplate* service and click the *Templates* tab.
++
+The _Templates Dashboard_ is displayed.
+
+. For the template that you want to use, click image:screenshot_horizontal_more_button.gif[More icon] and *Run Template*.
++
+image:screenshot_template_run_from_dashboard4.png[A screenshot showing how to run a template from the Templates Dashboard.]
++
+The _Run Template_ page appears and immediately runs the search that was defined in the template to find the volumes that match the criteria.
+
+. View the list of returned volumes in the _Volume Results_ area.
++
+image:screenshot_template_find_search_results.png[A screenshot showing how the volumes that were returned from the Find Resource search criteria.]
+
+. If the results are what you expected, select the checkbox for each volume that you want to have Cloud Backup enabled using the criteria from the _Enable Cloud Backup on Volume_ part of the template and click *Run Template*.
++
+If the results are not what you expected, click image:screenshot_edit_icon.gif[edit pencil icon] next to _Search Criteria_ and refine the search further.
+
+.Results
+
+The template will run and it will enable Cloud Backup on each volume that you checked from the search criteria.
+
+Any error will be called out in the _Running your Template_ page, and you can resolve the issues if needed.

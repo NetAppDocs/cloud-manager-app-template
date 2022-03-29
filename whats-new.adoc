@@ -1,0 +1,114 @@
+---
+sidebar: sidebar
+permalink: whats-new.html
+keywords: what's new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes
+summary: Learn what's new in Application Templates and Tagging.
+---
+
+= What's new with Application Templates and Tagging
+:hardbreaks:
+:nofooter:
+:icons: font
+:linkattrs:
+:imagesdir: ./media/
+
+[.lead]
+Learn what's new in Application Templates and Tagging.
+
+// tag::whats-new[]
+== 03 Mar 2022
+
+=== Now you can build a Template to find specific working environments.
+
+Using the "Find Existing Resources" action you can identify the working environment, and then use other template actions, such as creating a volume, to easily perform actions on existing working environments. link:task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates[Go here for details].
+
+=== Ability to create a Cloud Volumes ONTAP HA working environment in AWS.
+
+The existing support for creating a Cloud Volumes ONTAP working environment in AWS has been expanded to include creating a high-availability system in addition to a single-node system. link:task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment[See how to create a template for a Cloud Volumes ONTAP working environment].
+
+== 9 Feb 2022
+
+=== Now you can build a Template to find specific existing volumes and then enable Cloud Backup.
+
+Using the new "Find Resource" action you can identify all the volumes on which you want to enable Cloud Backup, and then use the Cloud Backup action to enable backup on those volumes.
+
+Current support is for volumes on Cloud Volumes ONTAP and on-premises ONTAP systems. link:task-define-templates.html#find-existing-volumes-and-activate-cloud-backup[Go here for details].
+
+== 31 Oct 2021
+
+=== Now you can tag your Sync relationships so you can group or categorize them for easy access.
+
+link:concept-tagging.html[Learn more about resource tagging].
+// end::whats-new[]
+
+== 11 Oct 2021
+
+=== Now you can create a duplicate of an existing template.
+
+Creating a duplicate can save a lot of time in case you want to create a new template that is very similar to an existing template. Just make the duplicate with a new name and change the couple items that make the template unique. link:task-define-templates.html#make-a-copy-of-a-template[See how to create a copy of a template].
+
+=== Enabling services on volumes created with templates is much easier now.
+
+Before you needed to select variables to identify the working environment, storage VM, and volume name. Now the template adds this information for you. This simplifies adding services for Cloud Backup, Cloud Compliance, and Replication to newly created volumes.
+
+=== Support has been added so you can label certain GCP resources.
+
+Now you can manage labels on your GCP resources using the Cloud Manager Tagging service. You can view GCP labels and label values that have been applied to resources, and you can apply those labels to other GCP resources that you are managing. link:concept-tagging.html#resources-that-you-can-tag[See the GCP resources that you can label].
+
+== 2 Sept 2021
+
+=== Now you can manage tags on your Azure resources using the Tagging service.
+
+You can view Azure tags and tag values that have been applied to resources, and you can apply those tags to other Azure resources that you are managing. link:concept-tagging.html#resources-that-you-can-tag[See the Azure resources that you can tag].
+
+=== Some additional AWS EC2 resources can now be tagged.
+
+== 8 Aug 2021
+
+=== Now you can create a Cloud Volumes ONTAP working environment using templates.
+
+This support is provided only for AWS environments at this time, and only for single-node clusters. See how to link:task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment[create a template for a Cloud Volumes ONTAP working environment].
+
+=== A new feature enables you to add tags to a volume in a volume template.
+
+Tagging enables you to group different resources to identify applications, regions, or departments in order to perform automation or to allocate costs to certain departments or regions.
+
+=== Now you can manage tags from your AWS EC2 Instances in Cloud Manager.
+
+You can view AWS tags and tag values that have been applied to EC2 Instances, and you can apply those tags to other EC2 Instances that you are managing. link:concept-tagging.html[Learn more about tagging].
+
+== 13 July 2021
+
+=== Support has been added to use the Replication service when defining a template.
+
+Now you can add in the template that you want to link:task-define-templates.html#add-replication-functionality-to-a-volume[replicate the data in the volume you are creating] to another volume using the https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html[Replication service].
+
+When you replicate data to other NetApp storage systems and continually update the secondary data, your data is kept current and remains available whenever you need it.
+
+=== Download a report that includes all the volumes that have "drifted" from your template settings.
+
+In this manner you can identify these volumes and assign someone to bring the volumes back into compliance. See link:task-check-template-compliance.html#create-a-drift-report-for-non-compliant-resources[how to download your drift report].
+
+=== New Tagging service released.
+
+A new Cloud Manager feature enables you to apply tags to your existing ONTAP resources to help organize and manage those resources. Tags are metadata that you can use to group resources to identify applications, environments, regions, billing codes, cloud providers, and more.
+
+link:concept-tagging.html[Learn more about tagging].
+
+== 7 June 2021
+
+=== Now you can conditionally enable certain actions when the user is running the template.
+
+For example, if a Cloud Volumes ONTAP volume is created with NetApp storage efficiency enabled, then Cloud Backup is also enabled on that volume. If storage efficiency is not enabled, then Cloud Backup is not enabled.
+
+=== You can now create a volume on an on-premises ONTAP system using templates.
+
+=== New functionality called "drift" has been added as an option when creating your templates.
+
+This feature enables Cloud Manager to monitor the hard-coded values you entered for a parameter in a template. After a storage admin has created a volume using that template, if Cloud Manager later sees that the parameter value has been changed so that it no longer aligns with the template definition, you can see all the volumes that have "drifted" from the designed template. In this manner you can identify these volumes and make changes to bring them back into compliance.
+
+== 2 May 2021
+
+=== Now you can integrate Cloud Data Sense when creating a volume template.
+
+Now you can enable Data Sense for each newly created volume, or enable Cloud Backup for each newly created volume... or create a template that enables both Backup and Compliance on the created volume.

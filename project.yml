@@ -1,7 +1,98 @@
 settings:
-  name: "Product Name"
+  name: AppTemplate
+  platform: cloud
   internal:
     pdf_enabled: true
   prod:
     pdf_enabled: true
 sidebar:
+  entries:
+    - title: All Cloud Manager documentation
+      url: https://docs.netapp.com/us-en/cloud-manager-family
+    - title: Application Template docs
+      url: /index.html
+    - title: Release notes
+      url: /whats-new.html
+    - title: Get started
+      entries:
+        - title: Learn about Application Template
+          url: /concept-resource-templates.html
+        - title: Learn about tagging
+          url: /concept-tagging.html
+    - title: Use Application Template
+      entries:
+        - title: Use templates to standardize resource creation
+          entries:
+            - title: Build templates for your organization
+              url: /task-define-templates.html
+            - title: Check resources for template compliance
+              url: /task-check-template-compliance.html
+            - title: Run templates to create resources
+              url: /task-run-templates.html
+        - title: Organize your resources using tags
+          entries:
+            - title: Manage tags for your resources
+              url: /task-using-tags.html
+    - title: Concepts
+      entries:
+        - title: Template building blocks
+          url: /reference-template-building-blocks.html
+    - title: Knowledge and support
+      entries:
+        - title: Register for support
+          url: /task-support-registration.html
+        - title: Get help
+          url: /task-get-help.html
+    - title: Legal notices
+      url: /legal-notices.html
+product-family:
+  name: Cloud Manager
+  repo: cloud-manager-family
+homepage:
+  tiles:
+    - title: Get started
+      links:
+        - title: Learn about App Templates
+          url: concept-resource-templates.html
+        - title: Learn about Tagging
+          url: concept-tagging.html
+        - title: What’s New
+          url: whats-new.html
+    - title: Create templates
+      links:
+        - title: Cloud Volumes ONTAP working environment
+          url: task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment
+        - title: Cloud Volumes ONTAP volume
+          url: task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-volume
+        - title: Azure NetApp Files volume
+          url: task-define-templates.html#create-a-template-for-an-azure-netapp-files-volume
+        - title: On-premises ONTAP volume
+          url: task-define-templates.html#create-a-template-for-an-on-premises-ontap-volume
+        - title: Add Backup functionality to a volume
+          url: task-define-templates.html#add-backup-functionality-to-a-volume
+        - title: Add Data Sense functionality to a volume
+          url: task-define-templates.html#add-data-sense-functionality-to-a-volume
+        - title: Add Replication functionality to a volume
+          url: task-define-templates.html#add-replication-functionality-to-a-volume
+    - title: Create resources using templates
+      links:
+        - title: Cloud Volumes ONTAP working environment
+          url: task-run-templates.html#select-and-run-a-working-environment-template
+        - title: Volume for CVO, on-prem, and ANF
+          url: task-run-templates.html#select-and-run-a-volume-template
+    - title: Manage resources using templates and tags
+      links:
+        - title: Check resources for template compliance (drift)
+          url: task-check-template-compliance.html
+        - title: Run a template that finds existing resources
+          url: task-run-templates.html#select-and-run-a-template-that-finds-existing-resources
+        - title: Manage tags for your resources
+          url: task-using-tags.html
+    - title: Blogs & community
+      links:
+        - title: NetApp Community
+          url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+        - title: Cloud Central blog
+          url: https://cloud.netapp.com/blog
+        - title: Cloud webinars
+          url: https://cloud.netapp.com/events
