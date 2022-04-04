@@ -16,32 +16,32 @@ summary: Learn what's new in Application Templates and Tagging.
 Learn what's new in Application Templates and Tagging.
 
 // tag::whats-new[]
-== 03 Mar 2022
+== 3 March 2022
 
 === Now you can build a Template to find specific working environments.
 
-Using the "Find Existing Resources" action you can identify the working environment, and then use other template actions, such as creating a volume, to easily perform actions on existing working environments. link:task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates[Go here for details].
+Using the "Find Existing Resources" action you can identify the working environment, and then use other template actions, such as creating a volume, to easily perform actions on existing working environments. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#examples-of-finding-existing-resources-and-enabling-services-using-templates[Go here for details].
 
 === Ability to create a Cloud Volumes ONTAP HA working environment in AWS.
 
-The existing support for creating a Cloud Volumes ONTAP working environment in AWS has been expanded to include creating a high-availability system in addition to a single-node system. link:task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment[See how to create a template for a Cloud Volumes ONTAP working environment].
+The existing support for creating a Cloud Volumes ONTAP working environment in AWS has been expanded to include creating a high-availability system in addition to a single-node system. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#create-a-template-for-a-cloud-volumes-ontap-working-environment[See how to create a template for a Cloud Volumes ONTAP working environment].
 
-== 9 Feb 2022
+== 9 February 2022
 
 === Now you can build a Template to find specific existing volumes and then enable Cloud Backup.
 
 Using the new "Find Resource" action you can identify all the volumes on which you want to enable Cloud Backup, and then use the Cloud Backup action to enable backup on those volumes.
 
-Current support is for volumes on Cloud Volumes ONTAP and on-premises ONTAP systems. link:task-define-templates.html#find-existing-volumes-and-activate-cloud-backup[Go here for details].
+Current support is for volumes on Cloud Volumes ONTAP and on-premises ONTAP systems. https://docs.netapp.com/us-en/cloud-manager-app-template/task-define-templates.html#find-existing-volumes-and-activate-cloud-backup[Go here for details].
 
-== 31 Oct 2021
+== 31 October 2021
 
 === Now you can tag your Sync relationships so you can group or categorize them for easy access.
 
-link:concept-tagging.html[Learn more about resource tagging].
+https://docs.netapp.com/us-en/cloud-manager-app-template/concept-tagging.html[Learn more about resource tagging].
 // end::whats-new[]
 
-== 11 Oct 2021
+== 11 October 2021
 
 === Now you can create a duplicate of an existing template.
 
@@ -55,7 +55,7 @@ Before you needed to select variables to identify the working environment, stora
 
 Now you can manage labels on your GCP resources using the Cloud Manager Tagging service. You can view GCP labels and label values that have been applied to resources, and you can apply those labels to other GCP resources that you are managing. link:concept-tagging.html#resources-that-you-can-tag[See the GCP resources that you can label].
 
-== 2 Sept 2021
+== 2 September 2021
 
 === Now you can manage tags on your Azure resources using the Tagging service.
 
@@ -63,7 +63,7 @@ You can view Azure tags and tag values that have been applied to resources, and 
 
 === Some additional AWS EC2 resources can now be tagged.
 
-== 8 Aug 2021
+== 8 August 2021
 
 === Now you can create a Cloud Volumes ONTAP working environment using templates.
 
