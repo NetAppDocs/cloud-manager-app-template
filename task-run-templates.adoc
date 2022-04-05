@@ -62,8 +62,8 @@ There are multiple ways to select and run a template to create new volumes:
 
 Regardless of the method you choose, the details about the required volume parameters that you must define are available in these sections:
 
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-provisioning-storage.html#creating-volumes-from-templates[How to provision Cloud Volumes ONTAP volumes^]
-* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf-volumes.html#creating-volumes-from-templates[How to provision Azure NetApp Files volumes^]
+* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html#create-a-volume-from-a-template[How to provision Cloud Volumes ONTAP volumes^]
+* https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-create-volumes.html#create-volumes-from-templates[How to provision Azure NetApp Files volumes^]
 * https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-provisioning-ontap.html#creating-volumes-from-templates[How to provision on-premises ONTAP volumes^]
 
 === Run a volume template from the working environment
