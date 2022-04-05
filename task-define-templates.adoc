@@ -47,7 +47,7 @@ Read the following requirements to make sure that you have a supported configura
 
 * When creating an on-premises ONTAP volume template, make sure you have an on-premises ONTAP working environment available for your users. See how to https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/task-discovering-ontap.html[discover an on-premises ONTAP system^] in Cloud Manager.
 
-* When creating an Azure NetApp Files volume template, make sure you have an Azure NetApp Files working environment available for your users. See how to https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-manage-anf.html[create an Azure NetApp Files working environment^] in Cloud Manager.
+* When creating an Azure NetApp Files volume template, make sure you have an Azure NetApp Files working environment available for your users. See how to https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/task-quick-start.html[create an Azure NetApp Files working environment^] in Cloud Manager.
 
 * If you plan to use Cloud Backup to backup up a volume in the template, ensure that your environment has activated Cloud Backup.
 
@@ -61,7 +61,7 @@ Resource templates enable you to create new volumes or a new Cloud Volumes ONTAP
 
 === Create a template for a Cloud Volumes ONTAP volume
 
-See https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-provisioning-storage.html#creating-flexvol-volumes[how to provision Cloud Volumes ONTAP volumes^] for details about all the parameters you need to complete in the Cloud Volumes ONTAP volume template.
+See https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-create-volumes.html[how to provision Cloud Volumes ONTAP volumes^] for details about all the parameters you need to complete in the Cloud Volumes ONTAP volume template.
 
 For this example we'll create a template named "CVO volume for databases" and include the following 2 actions:
 
@@ -163,7 +163,7 @@ image:screenshot_create_template_add_action.png[A screenshot showing additional 
 
 . Select the *3 Months Retention* backup policy to create 30 daily, 13 weekly, and 3 monthly backups.
 
-. Below the Working Environment and Volume Name fields there are three selections you use to indicate which volume will have backup enabled. See <<Pass values between template actions,how to complete these fields>>.
+. Below the Working Environment and Volume Name fields there are three selections you use to indicate which volume will have backup enabled. See link:reference-template-building-blocks.html#pass-values-between-template-actions[how to complete these fields].
 
 . Click *Apply* and the Cloud Backup dialog is saved.
 
@@ -403,7 +403,7 @@ You can create a single-node or high-availability Cloud Volumes ONTAP working en
 * This template doesn't create the first volume in the working environment. You must add a "Create Volume in Cloud Volumes ONTAP" action in the template to create the volume.
 ====
 
-See https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws[how to launch a single-node Cloud Volumes ONTAP system in AWS^] or a https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws[Cloud Volumes ONTAP HA pair in AWS] for the prerequisites that must be in place, and for details about all the parameters you'll need to define in this template.
+See https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-single-node-cloud-volumes-ontap-system-in-aws[how to launch a single-node Cloud Volumes ONTAP system in AWS^] or a https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html#launching-a-cloud-volumes-ontap-ha-pair-in-aws[Cloud Volumes ONTAP HA pair in AWS^] for the prerequisites that must be in place, and for details about all the parameters you'll need to define in this template.
 
 .Steps
 
@@ -645,7 +645,7 @@ If you want to scan data for a different volume, you can enter those details man
 
 === Add Replication functionality to a volume
 
-When creating a volume template, you can add in the template that you want to replicate the data in the volume to another volume using the https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html[Replication] service. You can replicate data to a Cloud Volumes ONTAP cluster or to an on-prem ONTAP cluster.
+When creating a volume template, you can add in the template that you want to replicate the data in the volume to another volume using the https://docs.netapp.com/us-en/cloud-manager-replication/concept-replication.html[Replication^] service. You can replicate data to a Cloud Volumes ONTAP cluster or to an on-prem ONTAP cluster.
 
 TIP: This action is not applicable for Azure NetApp Files volumes.
 
