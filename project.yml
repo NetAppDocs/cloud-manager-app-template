@@ -15,11 +15,11 @@ sidebar:
       url: /whats-new.html
     - title: Get started
       entries:
-        - title: Learn about Application Template
+        - title: Learn about AppTemplate
           url: /concept-resource-templates.html
         - title: Learn about tagging
           url: /concept-tagging.html
-    - title: Use Application Template
+    - title: Use AppTemplate
       entries:
         - title: Use templates to standardize resource creation
           entries:
@@ -52,7 +52,7 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: Learn about App Templates
+        - title: Learn about AppTemplate
           url: concept-resource-templates.html
         - title: Learn about Tagging
           url: concept-tagging.html
@@ -68,12 +68,8 @@ homepage:
           url: task-define-templates.html#create-a-template-for-an-azure-netapp-files-volume
         - title: On-premises ONTAP volume
           url: task-define-templates.html#create-a-template-for-an-on-premises-ontap-volume
-        - title: Add Backup functionality to a volume
-          url: task-define-templates.html#add-backup-functionality-to-a-volume
-        - title: Add Data Sense functionality to a volume
-          url: task-define-templates.html#add-data-sense-functionality-to-a-volume
-        - title: Add Replication functionality to a volume
-          url: task-define-templates.html#add-replication-functionality-to-a-volume
+        - title: Add Backup, Data Sense, or Replication functionality to a volume
+          url: task-define-templates.html#examples-of-enabling-services-using-templates
     - title: Create resources using templates
       links:
         - title: Cloud Volumes ONTAP working environment
