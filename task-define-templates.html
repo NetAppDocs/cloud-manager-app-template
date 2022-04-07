@@ -583,7 +583,7 @@
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
         All Cloud Manager documentation
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/cloud-manager-app-template/index.html">
-        Application Template docs
+        AppTemplate docs
       </a></li><li class=" "><a class="na-navbar-padding" href="/us-en/cloud-manager-app-template/whats-new.html">
         Release notes
       </a></li><li class="subfolders "><a href="#">
@@ -679,7 +679,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-04-05 00:00:23 +0000">04/05/2022</time>
+    <time datetime="2022-04-07 15:02:03 +0000">04/07/2022</time>
     
   
 
@@ -1491,10 +1491,10 @@ For information about tags, refer to <a href="https://docs.aws.amazon.com/AWSEC2
 </div>
 </div>
 <div class="sect1">
-<h2 id="examples-of-finding-existing-resources-and-enabling-services-using-templates">Examples of finding existing resources and enabling services using templates</h2>
+<h2 id="examples-of-finding-existing-resources-using-templates">Examples of finding existing resources using templates</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Using the <em>Find Existing Resources</em> action you can find specific working environments or find existing volumes and enable a cloud service on those volumes. This action provides a variety of filters so you can narrow your search to just the resources you are interested in.</p>
+<p>Using the <em>Find Existing Resources</em> action you can find specific working environments or find existing volumes by providing a variety of filters so you can narrow your search to just the resources you are interested in. After finding the correct resources, you can add volumes to a working environment, or enable a cloud service on the resulting volumes.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1503,15 +1503,15 @@ For information about tags, refer to <a href="https://docs.aws.amazon.com/AWSEC2
 <img src="/us-en/cloud-manager-app-template/images/note.svg" alt="Note">
 </td>
 <td class="content">
-At this time you can find volumes within Cloud Volumes ONTAP, on-premises ONTAP, and Azure NetApp Files systems only. And you can enable only Cloud Backup on Cloud Volumes ONTAP and on-premises ONTAP volumes. Additional resources and services will be available at a later time.
+At this time you can find volumes within Cloud Volumes ONTAP, on-premises ONTAP, and Azure NetApp Files systems. And you can enable Cloud Backup on Cloud Volumes ONTAP and on-premises ONTAP volumes. Additional resources and services will be available at a later time.
 </td>
 </tr>
 </table>
 </div>
 <div class="sect2">
-<h3 id="find-existing-volumes-and-activate-cloud-backup">Find existing volumes and activate Cloud Backup</h3>
+<h3 id="find-existing-volumes-and-activate-a-cloud-service">Find existing volumes and activate a cloud service</h3>
 <div class="paragraph">
-<p>The current <em>Find Existing Resources</em> action functionality enables you to find volumes on Cloud Volumes ONTAP and on-premises ONTAP working environments that do not currently have Cloud Backup enabled. When you enable Cloud Backup on specific volumes, this action also sets the backup policy you configure as the default policy for that working environment. So all future volumes on those working environments can use the same backup policy.</p>
+<p>The current <em>Find Existing Resources</em> action functionality enables you to find volumes on Cloud Volumes ONTAP and on-premises ONTAP working environments that do not currently have Cloud Backup or Cloud Data Sense enabled. When you enable Cloud Backup on specific volumes, this action also sets the backup policy you configured as the default policy for that working environment - so all future volumes on those working environments can use the same backup policy.</p>
 </div>
 <div class="olist arabic">
 <div class="title">Steps</div>
@@ -1562,12 +1562,15 @@ At this time you can find volumes within Cloud Volumes ONTAP, on-premises ONTAP,
 </div>
 </li>
 <li>
-<p>In the <em>Details</em> area you can select a volume name and the volume size.</p>
+<p>In the <em>Details</em> area you can select the volume name, the volume size range, and any tags assigned to the volumes.</p>
 <div class="paragraph">
 <p>For the volume name, click in the field and select one of the 5 options. You can let the admin enter any name by selecting <strong>Free Text</strong>, or you can specify that the volume name must have a certain prefix or suffix, that it <em>contains</em> certain characters, or that it follows rules from a regular expression (regex) you enter.</p>
 </div>
 <div class="paragraph">
 <p>For volume size you can specify a range; for example, all volumes between 100 GiB and 500 GiB.</p>
+</div>
+<div class="paragraph">
+<p>For tags you can narrow the search further so that the results display only volumes with certain tag key/value pairs.</p>
 </div>
 <div class="paragraph">
 <p><span class="image"><img src="./media/screenshot_define_find_resource_filter_details.png" alt="A screenshot showing the Details filters you can apply to the find existing resources template."></span></p>
