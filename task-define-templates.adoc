@@ -490,15 +490,15 @@ The template is created and you are returned to the Template Dashboard where you
 
 See <<What to do after you have created the template,what you should tell your users about templates>>.
 
-== Examples of finding existing resources and enabling services using templates
+== Examples of finding existing resources using templates
 
-Using the _Find Existing Resources_ action you can find specific working environments or find existing volumes and enable a cloud service on those volumes. This action provides a variety of filters so you can narrow your search to just the resources you are interested in.
+Using the _Find Existing Resources_ action you can find specific working environments or find existing volumes by providing a variety of filters so you can narrow your search to just the resources you are interested in. After finding the correct resources, you can add volumes to a working environment, or enable a cloud service on the resulting volumes.
 
-NOTE: At this time you can find volumes within Cloud Volumes ONTAP, on-premises ONTAP, and Azure NetApp Files systems only. And you can enable only Cloud Backup on Cloud Volumes ONTAP and on-premises ONTAP volumes. Additional resources and services will be available at a later time.
+NOTE: At this time you can find volumes within Cloud Volumes ONTAP, on-premises ONTAP, and Azure NetApp Files systems. And you can enable Cloud Backup on Cloud Volumes ONTAP and on-premises ONTAP volumes. Additional resources and services will be available at a later time.
 
-=== Find existing volumes and activate Cloud Backup
+=== Find existing volumes and activate a cloud service
 
-The current _Find Existing Resources_ action functionality enables you to find volumes on Cloud Volumes ONTAP and on-premises ONTAP working environments that do not currently have Cloud Backup enabled. When you enable Cloud Backup on specific volumes, this action also sets the backup policy you configure as the default policy for that working environment. So all future volumes on those working environments can use the same backup policy.
+The current _Find Existing Resources_ action functionality enables you to find volumes on Cloud Volumes ONTAP and on-premises ONTAP working environments that do not currently have Cloud Backup or Cloud Data Sense enabled. When you enable Cloud Backup on specific volumes, this action also sets the backup policy you configured as the default policy for that working environment - so all future volumes on those working environments can use the same backup policy.
 
 .Steps
 
@@ -532,11 +532,13 @@ Instead, it is recommended that you fill out a few filters to reduce the number 
 +
 image:screenshot_define_find_resource_filter_context.png[A screenshot showing the Context filters you can apply to the find existing resources template.]
 
-. In the _Details_ area you can select a volume name and the volume size.
+. In the _Details_ area you can select the volume name, the volume size range, and any tags assigned to the volumes.
 +
 For the volume name, click in the field and select one of the 5 options. You can let the admin enter any name by selecting *Free Text*, or you can specify that the volume name must have a certain prefix or suffix, that it _contains_ certain characters, or that it follows rules from a regular expression (regex) you enter.
 +
 For volume size you can specify a range; for example, all volumes between 100 GiB and 500 GiB.
++
+For tags you can narrow the search further so that the results display only volumes with certain tag key/value pairs.
 +
 image:screenshot_define_find_resource_filter_details.png[A screenshot showing the Details filters you can apply to the find existing resources template.]
 
