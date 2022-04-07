@@ -2,8 +2,8 @@
 layout: astra
 sidebar: sidebar
 permalink: index.html
-lead: The Application Template service enables you to standardize resource creation for your Cloud Manager working environments.
-summary: The Application Template service enables you to standardize resource creation for your Cloud Manager working environments.
+lead: The AppTemplate service enables you to standardize resource creation for your Cloud Manager working environments.
+summary: The AppTemplate service enables you to standardize resource creation for your Cloud Manager working environments.
 ---
 
 = AppTemplate documentation
