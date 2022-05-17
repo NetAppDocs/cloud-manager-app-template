@@ -24,12 +24,8 @@ AppTemplate offers the following features and benefits:
 * Automates and improves the design and development of your infrastructure
 * Provides a single location to activate different NetApp Cloud services; like Cloud Backup and Cloud Data Sense
 * Identifies resources that have been changed and are no longer compliant with the template (using the "drift" feature)
-
-==== What is "drift"? ====
-
-"Drift" allows Cloud Manager to monitor the parameter values used when a resource is created with the template. At this time, "drift" can identify when a resource has been changed so you can manually make adjustments to bring it back into compliance with the template. In the future we'll be able to send you notifications when a resource is out of compliance, or even reverse a user's change so that all resources created from a template are brought back into compliance automatically.
-
-link:task-check-template-compliance.html[Learn more about drift].
++
+At this time, you'll need to manually make adjustments to bring the resource back into compliance with the template. link:task-check-template-compliance.html[Learn more about drift].
 
 == Available template actions
 
