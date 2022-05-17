@@ -15,7 +15,7 @@ summary: Cloud Manager can monitor the parameter values used when a resource was
 [.lead]
 Cloud Manager can monitor the parameter values used when a resource was created with a template using the "drift" feature. Drift identifies resources that have been changed and that are no longer compliant with the template settings.
 
-At this time, drift identifies the changed parameters in a resource -- you must manually make adjustments to the resource to bring it back into compliance with the template.
+At this time, drift identifies the changed parameters in a resource -- you must manually make adjustments to the resource to bring it back into compliance with the template. In the future we'll be able to send you notifications when a resource is out of compliance, or even reverse a user's change so that all resources created from a template are brought back into compliance automatically.
 
 == How does drift work
 
